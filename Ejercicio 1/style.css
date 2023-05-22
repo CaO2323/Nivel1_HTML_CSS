@@ -1,12 +1,13 @@
 * {
     margin: 10px;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 body {
     box-sizing: border-box;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .father {
@@ -15,111 +16,86 @@ body {
 }
 
 .header {
-    background-color: #000;
+    background: #000;
     display: flex;
     flex-flow: column nowrap;
 }
 
 .menu {
-    background-color: #4C4C6D;
+    background: #2D4059;
     display: flex;
-    flex-flow: row nowrap;
-    height: 80px;
 }
 
 .logo {
-    background-color: #F45050;
+    background: #ea5455;
     flex: 1 1 auto;
-    height: 30px;
 }
 
 .navi {
-    background-color: #F45050;
+    background: #ea5455;
     flex: 5 1 auto;
-    height: 30px;
 }
 
 .social {
-    background-color: #F45050;
+    background: #ea5455;
     flex: 1 1 auto;
-    height: 30px;
 }
 
 .main-text {
-    background-color: #f07b3f;
+    background: #F07b3f;
+    display: flex;
 }
 
 h1 {
-    background-color: #ffd460;
+    background: #FFd460;
+    width: 100%;
 }
 
 .section {
-    background-color: #FFED00;
+    background: #FFED00;
     display: flex;
 }
 
 .articles {
-    background-color: #537188;
-    flex: 2 1 auto;
+    background: #4e4e6a;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
+    flex: 2 1 auto;
 }
 
 .article {
-    background-color: #146C94;
-    flex: 1 1 40%;
+    background: #1f6cb0;
+    flex: 1 1 42%;
 }
 
 .browser {
-    background-color: #AFD3E2;
+    background: #70a3c4;
     flex: 1 1 100%;
 }
 
 .aside {
-    background-color: #F45050;
+    background: #f73f52;
     flex: 1 1 auto;
 }
 
 .ad {
-    background-color: #FEFF86;
-    flex: 1 1 100%;
+    background: #FFea85;
 }
 
 .footer {
-    background-color: #000;
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .foot {
-    background-color: #F9D949;
+    background: #e6af2e;
 }
 
-@media all and and ((max-width: 800px)) {
+@media all and (max-width: 768px) {
     .section {
         flex-direction: column;
-    }
-    .menu {
-        flex-direction: column;
-        height: auto;
-    }
-    .aside {
-        display: flex;
-        /* justify-content: center;*/
-        height: auto;
-    }
-}
-
-@media (max-width: 600px) {
-    .section {
-        flex-direction: column;
-    }
-    .menu {
-        flex-direction: column;
-        height: auto;
-    }
-    .aside {
-        display: flex;
-        /* justify-content: center;*/
-        height: auto;
+        background: yellow;
     }
 }
 
@@ -137,8 +113,8 @@ h1 {
     .article {
         background: #62959C;
     }
-    .navegation {
-        background: #A3DDCB;
+    .navi {
+        background: #ea5455;
     }
     .aside {
         background: #FD7B54;
