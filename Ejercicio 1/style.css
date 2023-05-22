@@ -1,7 +1,12 @@
 * {
     margin: 10px;
     padding: 10px;
+}
+
+body {
     box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .father {
@@ -77,6 +82,7 @@ h1 {
 
 .ad {
     background-color: #FEFF86;
+    flex: 1 1 100%;
 }
 
 .footer {
@@ -85,4 +91,59 @@ h1 {
 
 .foot {
     background-color: #F9D949;
+}
+
+@media all and and ((max-width: 800px)) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        /* justify-content: center;*/
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display: flex;
+        /* justify-content: center;*/
+        height: auto;
+    }
+}
+
+@media all and (max-width: 430px) {
+    .menu {
+        flex-direction: column;
+    }
+    .section {
+        flex-direction: column;
+        background: #FEE228;
+    }
+    .articles {
+        background: #09506F;
+    }
+    .article {
+        background: #62959C;
+    }
+    .navegation {
+        background: #A3DDCB;
+    }
+    .aside {
+        background: #FD7B54;
+    }
+    .ad {
+        background: #FDB36B;
+    }
 }
